@@ -74,7 +74,7 @@
                 </div>
                 <div class="footer mt-[54px]">
                     <button
-                        class="px-[16px] py-[12px] rounded-full bg-primary text-backgroundGamma text-button font-bold font-serif">Inscription</button>
+                        class="px-[16px] py-[12px] rounded-full bg-primary text-backgroundGamma text-button font-bold font-serif hover:bg-primaryBeta">Inscription</button>
                 </div>
                 <div class="lg:hidden md:flex sm:flex flex flex-row items-center mt-[54px]">
                     <span class="text-body text-dark font-normal font-inter mr-[12px]">Vous avez déjà un compte?</span>
