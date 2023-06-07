@@ -6,6 +6,13 @@
 
 @import "tailwindcss/variants";
 
+@layer components {
+    .register-input {
+        @apply text-body2 font-normal font-inter block w-full bg-white border-2 border-medium rounded-[12px] py-[14px] px-[16px] focus:border-primary focus:ring-primary;
+    }
+    /* ... */
+}
+
 @import url(https://fonts.googleapis.com/css2?family=PT+Serif);
 
 @import url(https://fonts.googleapis.com/css2?family=Space+Mono);

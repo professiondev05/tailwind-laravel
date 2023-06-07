@@ -32,20 +32,18 @@
                 </div>
                 <div class="w-[336px] flex flex-col gap-[24px] mt-[24px]">
                     <div class="relative float-label-input">
-                        <input type="text" placeholder=" "
-                            class="text-body2 font-normal font-inter block w-full bg-white border-2 border-medium rounded-[12px] py-[14px] px-[16px] focus:border-primary focus:ring-primary">
+                        <input type="text" placeholder=" " class="register-input">
                         <label for="name"
                             class="absolute font-inter top-3 left-0 text-gray-400 pointer-events-none transition duration-200 ease-in-outbg-white px-[16px] text-grey-darker">Prénom</label>
                     </div>
                     <div class="relative float-label-input">
-                        <input type="text" placeholder=" "
-                            class="text-body2 font-normal font-inter block w-full bg-white border-2 border-medium rounded-[12px] py-[14px] px-[16px] focus:border-primary focus:ring-primary">
+                        <input type="text" placeholder=" " class="register-input">
                         <label for="name"
                             class="absolute font-inter top-3 left-0 text-gray-400 pointer-events-none transition duration-200 ease-in-outbg-white px-[16px] text-grey-darker">Nom</label>
                     </div>
                     <div class="relative float-label-input">
                         <input type="email" placeholder=" "
-                            class="peer text-body2 font-normal font-inter block w-full bg-white border-2 border-medium rounded-[12px] py-[14px] px-[16px] focus:border-primary focus:ring-primary ring-black outline-black shadow-none">
+                            class="peer register-input ring-black outline-black shadow-none">
                         <label for="name"
                             class="absolute font-inter top-3 left-0 text-gray-400 pointer-events-none transition duration-200 ease-in-outbg-white px-[16px] text-grey-darker">Votre
                             email</label>
@@ -54,8 +52,7 @@
                         </p>
                     </div>
                     <div class="relative float-label-input flex items-center">
-                        <input type="password" placeholder=" "
-                            class="text-body2 font-normal font-inter block w-full bg-white border-2 border-medium rounded-[12px] py-[14px] px-[16px] focus:border-primary focus:ring-primary">
+                        <input type="password" placeholder=" " class="register-input">
                         <label for="name"
                             class="absolute font-inter top-3 left-0 text-gray-400 pointer-events-none transition duration-200 ease-in-outbg-white px-[16px] text-grey-darker">Mot
                             de passe</label>
@@ -63,8 +60,7 @@
                             flip="vertical" />
                     </div>
                     <div class="relative float-label-input flex items-center">
-                        <input type="password" placeholder=" "
-                            class="text-body2 font-normal font-inter block w-full bg-white border-2 border-medium rounded-[12px] py-[14px] px-[16px] focus:border-primary focus:ring-primary">
+                        <input type="password" placeholder=" " class="register-input">
                         <label for="name"
                             class="absolute font-inter top-3 left-0 text-gray-400 pointer-events-none transition duration-200 ease-in-outbg-white px-[16px] text-grey-darker">Confirmation
                             mot de passe</label>
