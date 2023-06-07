@@ -7,6 +7,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     {{-- <script src='https://kit.fontawesome.com/f6f0822ab2.js' crossorigin='anonymous'></script> --}}
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -51,21 +53,29 @@
                             Please provide a valid email address.
                         </p>
                     </div>
-                    <div class="relative float-label-input flex items-center">
-                        <input type="password" placeholder=" " class="register-input">
+                    <div class="relative float-label-input flex items-center" x-data="{ show: true }">
+                        <input :type="show ? 'password' : 'text'" placeholder=" " class="register-input">
                         <label for="name"
                             class="absolute font-inter top-3 left-0 text-gray-400 pointer-events-none transition duration-200 ease-in-outbg-white px-[16px] text-grey-darker">Mot
                             de passe</label>
-                        <iconify-icon class="text-medium text-[20px] cursor-pointer absolute right-5" icon="mdi:eye"
-                            flip="vertical" />
+                        <iconify-icon @click="show = !show" :class="{ 'hidden': !show, 'block': show }"
+                            class="text-medium text-[20px] cursor-pointer absolute right-5" icon="mdi:eye"
+                            flip="vertical"></iconify-icon>
+                        <iconify-icon @click="show = !show" :class="{ 'block': !show, 'hidden': show }"
+                            class="text-medium text-[20px] cursor-pointer absolute right-5" icon="mdi:eye-off"
+                            flip="vertical"></iconify-icon>
                     </div>
-                    <div class="relative float-label-input flex items-center">
-                        <input type="password" placeholder=" " class="register-input">
+                    <div class="relative float-label-input flex items-center" x-data="{ show: true }">
+                        <input :type="show ? 'password' : 'text'" placeholder=" " class="register-input">
                         <label for="name"
                             class="absolute font-inter top-3 left-0 text-gray-400 pointer-events-none transition duration-200 ease-in-outbg-white px-[16px] text-grey-darker">Confirmation
                             mot de passe</label>
-                        <iconify-icon class="text-medium text-[20px] cursor-pointer absolute right-5" icon="mdi:eye-off"
-                            flip="vertical" />
+                        <iconify-icon @click="show = !show" :class="{ 'hidden': !show, 'block': show }"
+                            class="text-medium text-[20px] cursor-pointer absolute right-5" icon="mdi:eye"
+                            flip="vertical"></iconify-icon>
+                        <iconify-icon @click="show = !show" :class="{ 'block': !show, 'hidden': show }"
+                            class="text-medium text-[20px] cursor-pointer absolute right-5" icon="mdi:eye-off"
+                            flip="vertical"></iconify-icon>
                     </div>
                     <div class="flex flex-row items-center gap-[20px]">
                         <input type="checkbox" class="rounded border-2 border-black focus:outline-0 focus:ring-0" />

@@ -684,6 +684,9 @@ select{
 .mt-\[54px\]{
   margin-top: 54px;
 }
+.block{
+  display: block;
+}
 .flex{
   display: flex;
 }
@@ -707,6 +710,9 @@ select{
 }
 .h-screen{
   height: 100vh;
+}
+.h-6{
+  height: 1.5rem;
 }
 .min-h-screen{
   min-height: 100vh;
